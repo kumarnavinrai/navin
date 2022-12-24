@@ -600,7 +600,23 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+  <audio id="myAudio">
+    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/descent/bomb.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button onclick="playAudio()" type="button">Play Audio</button>
+  
+  <script>
+  var x = document.getElementById("myAudio"); 
 
+  function playAudio() { 
+    x.play(); 
+  } 
+
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
